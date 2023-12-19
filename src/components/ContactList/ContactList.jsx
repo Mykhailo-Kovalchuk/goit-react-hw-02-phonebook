@@ -7,9 +7,11 @@ const ContactList = ({ contactsArray, contactBtnDeleter }) => {
         <p className={css.contactListText}>
           {friend.name}: {friend.number}
         </p>
-        <button type="button" 
-        onClick={() => contactBtnDeleter(friend.id)}
-        className={css.contactListBtnDelete}>
+        <button
+          type="button"
+          onClick={() => contactBtnDeleter(friend.id)}
+          className={css.contactListBtnDelete}
+        >
           Delete contact
         </button>
       </li>
